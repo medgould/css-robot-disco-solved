@@ -1,0 +1,225 @@
+.robot-container {
+  
+  width: 100%;
+  height: 100%;
+  top: 10%;
+  left:10%;
+  right:100px;
+  bottom:100px;
+  background: rgb(63, 55, 136);
+}
+
+.robot-face-shape {
+  position: relative;
+  width: 1000px;
+  height: 1200px;
+  top: 5%;
+  left: 25%;
+  background: radial-gradient(circle at 50%, rgb(248, 248, 248), 50%, rgb(12, 12, 12));
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+.robot-eye-left {
+  position: absolute;
+  width: 360px;
+  height: 120px;
+  top: 35%;
+  left: 15%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background: black;
+}
+.left-eye-ball {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 40%;
+  left: 20%;
+  border-radius: 50%;
+  background: rgb(221, 20, 20);
+}
+
+.robot-eye-right {
+  position: absolute;
+  width: 350px;
+  height: 120px;
+  top: 35%;
+  left:50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background: black;
+}
+
+.left-eye-ball {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  top: 40%;
+  left: 30%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50%, rgb(10, 8, 8), 50%, rgb(240, 4, 4));
+  animation: move-left-eye 5s alternate infinite;
+}
+
+.right-eye-ball {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  top: 40%;
+  left: 80%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50%, rgb(10, 8, 8), 50%, rgb(240, 4, 4));
+  animation: move-right-eye 5s alternate  infinite;
+}
+
+.robot-ear-left {  
+  position: absolute;
+  width: 180px;
+  height:560px;
+  top: 40%;
+  left:-15%;
+  outline: 1px solid black;
+  outline-offset: -10px;
+  border-radius: 50%;
+  background: rgb(103, 102, 105);
+  border-top-left-radius: 35%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 7%;
+}
+.robot-ear-left:hover {
+  transform: rotate(-90deg);
+  transition: transform 2s ease-in-out;
+  
+}
+
+
+.robot-ear-right {
+  position: absolute;
+  width: 180px;
+  height:560px;
+  top: 40%;
+  right:-15%;
+  border-radius: 50%;
+  outline: 1px solid black;
+  outline-offset: -10px;
+  background: rgb(103, 102, 105);
+  border-top-left-radius: 5%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 7%;
+  border-bottom-right-radius: 25%
+}
+.robot-ear-right:hover {
+  transform: rotate(90deg);
+  transition: transform 2s ease-in-out;
+  
+}
+
+
+.robot-nose {  
+  position: relative;
+  width: 400px;
+  height:225px;
+  top: 10%;
+  left:30%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+
+  background: radial-gradient(circle at 50%, rgb(206, 194, 194), 50%, rgb(58, 56, 56));
+  opacity: 50% ;
+}
+.robot-nose:hover {
+  opacity: 0; 
+}
+.robot-teeth {  
+  position: relative;
+  width: 400px;
+  height:400px;
+  top: 10%;
+  left:30%;
+
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  background: rgb(48, 48, 49);
+}
+
+.robot-tooth {  
+  position: relative;
+  display: inline-block;
+  width: 27px;
+  height: 300px;
+  top: 50px;
+  left:15px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background: rgb(223, 223, 226);
+  animation: teeth-animation 5s infinite;
+}
+
+.robot-hair-style {  
+  position: relative;
+  width: 20%;
+  height: 40%;
+  top: -5%;
+  left: 40%;
+  background-color: silver;
+  background-size: 100%;
+  background-position: center;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  outline: 1px solid black;
+  outline-offset: -10px;
+}
+
+.robot-hair-one { 
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgb(245, 241, 24);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  top: 20%;
+  left: 40%;
+  animation: hair-one-animation 3s  infinite;
+  /* animation-timing-function: ease-in-out; */
+}
+.robot-hair-two {  
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgb(105, 105, 58);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  top:45%;
+  left: 40%;
+  animation: hair-two-animation 3s infinite;
+  /*animation-timing-function: ease-in-out; */
+  }
+
+
+.robot-hair-three {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 44.5%;
+  left: 50%;
+  background: rgb(  99, 65, 192);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  top:75%;
+  left:40%;
+  animation: hair-three-animation 3s infinite;
+  /* animation-timing-function: ease-in-out; */
+}

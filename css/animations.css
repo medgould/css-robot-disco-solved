@@ -1,0 +1,93 @@
+@keyframes move-left-eye {
+  from {
+    top:30%;
+    left: 20%;
+  }
+   
+  to {
+      top: 30%;
+      left: 90%;
+    }
+} 
+
+@keyframes move-right-eye {
+  from {
+    top:30%;
+    left: 80%;
+  }
+   
+  to {
+      top: 30%;
+      left: -5%;
+    }
+} 
+
+@keyframes hair-one-animation {
+  0% {
+    background: red;
+  }
+
+  50% {
+    background: yellow;
+  }
+
+  100%{
+    background: blue;
+  }
+}
+@keyframes hair-two-animation {
+  0% {
+    background: yellow;
+  }
+
+  50% {
+    background: blue;
+  }
+
+  100%{
+    background: red;
+  }
+}
+@keyframes hair-three-animation {
+  0% {
+    background: blue;
+  }
+
+  50% {
+    background: red;
+  }
+
+  100%{
+    background: yellow;
+  }
+}
+@keyframes teeth-animation {
+  0% {
+    transform: scale(.1);
+    background: orangered;
+  }
+  70% {
+    transform: scale(.1);
+    background: orangered;
+  }
+  75% {
+    transform: scale(.2);
+    background: rgb(248, 224, 3);
+  }
+  80% {
+    transform: scale(.8);
+    background: orangered;
+  }
+  85% {
+    transform: scale(.5);
+    background: rgb(248, 224, 3);
+  }
+  90% {
+    transform: scale(.6);
+    background: orangered;
+  }
+  95% {
+    transform: scale(.2);
+    background: rgb(248, 224, 3);
+  }
+}
